@@ -1,4 +1,4 @@
-# 🛍️ Full-Stack E-Commerce Application
+# 🛍️ Full-Stack E-Commerce Web Application
 
 A full-stack e-commerce web application built to practice and strengthen my skills in **frontend and backend development**, including authentication, REST APIs, database relationships, order management, and simulated payment processing.
 
