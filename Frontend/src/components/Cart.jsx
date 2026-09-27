@@ -8,11 +8,11 @@ function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
     );
 
     return (
-        <div className="px-4">
+        <div className="px-2 sm:px-4">
 
             {/* Header */}
             <div className="mb-6">
-                <h2 className="text-3xl font-semibold text-gray-900">
+                <h2 className="text-2xl sm:text-3xl font-semibold text-gray-900">
                     Your Cart
                 </h2>
 
@@ -44,7 +44,7 @@ function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
                         {cartItems.map((item) => (
                             <div
                                 key={item._id}
-                                className="bg-white rounded-2xl border border-gray-200 p-5 flex items-center gap-5"
+                                className="bg-white rounded-2xl border border-gray-200 p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5"
                             >
 
                                 {/* Image */}
@@ -52,10 +52,10 @@ function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
                                     <img
                                         src={`${API_URL}${item.image}`}
                                         alt={item.name}
-                                        className="w-24 h-24 rounded-xl object-cover"
+                                        className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl object-cover"
                                     />
                                 ) : (
-                                    <div className="w-24 h-24 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400">
+                                    <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-xl bg-gray-100 flex items-center justify-center text-gray-400">
                                         No image
                                     </div>
                                 )}
@@ -78,7 +78,7 @@ function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
                                 </div>
 
                                 {/* Quantity */}
-                                <div className="flex items-center border border-gray-200 rounded-xl overflow-hidden">
+                                <div className="flex items-center border border-gray-200 rounded-xl overflow-hidden self-start sm:self-auto">
 
                                     <button
                                         onClick={() =>
@@ -115,7 +115,7 @@ function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
                                     onClick={() =>
                                         onRemove(item._id)
                                     }
-                                    className="text-red-500 hover:bg-red-50 px-3 py-2 rounded-lg transition"
+                                    className="text-red-500 hover:bg-red-50 px-3 py-2 rounded-lg transition self-start sm:self-auto"
                                 >
                                     Remove
                                 </button>

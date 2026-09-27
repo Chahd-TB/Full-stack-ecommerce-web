@@ -7,7 +7,7 @@ function Toolbar({
     onAddClick
 }) {
     return (
-        <div className="mx-4 mb-4 rounded-2xl py-4 flex items-center gap-3">
+        <div className="mx-4 mb-4 rounded-2xl py-4 flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
 
             <input
                 value={query}
@@ -15,7 +15,7 @@ function Toolbar({
                     onQueryChange(e.target.value)
                 }
                 placeholder="Search products..."
-                className="bg-white border border-gray-200 px-4 py-2.5 text-base rounded-xl w-64 outline-none focus:border-[#1f6f6b]"
+                className="bg-white border border-gray-200 px-3 py-2 text-sm sm:text-base rounded-xl w-full sm:w-64 outline-none focus:border-[#1f6f6b]"
             />
 
             <select
@@ -23,7 +23,7 @@ function Toolbar({
                 onChange={(e) =>
                     onCategoryChange(e.target.value)
                 }
-                className="bg-white border border-gray-200 px-4 py-2.5 text-base rounded-xl outline-none focus:border-[#1f6f6b]"
+                className="bg-white border border-gray-200 px-3 py-2 text-sm sm:text-base rounded-xl w-full sm:w-auto outline-none focus:border-[#1f6f6b]"
             >
                 <option value="All categories">
                     All categories
@@ -39,7 +39,7 @@ function Toolbar({
             {onAddClick && (
                 <button
                     onClick={onAddClick}
-                    className="ml-auto bg-[#1f6f6b] hover:bg-[#185b58] text-white px-5 py-2.5 rounded-xl text-base font-medium shadow-sm transition"
+                    className="sm:ml-auto bg-[#1f6f6b] hover:bg-[#185b58] text-white px-4 py-2 rounded-xl text-sm sm:text-base font-medium shadow-sm transition"
                 >
                     + Add Product
                 </button>
