@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function StockBadge({ stock }) {
     if (stock === 0)
         return (
@@ -103,7 +105,7 @@ function ProductRow({
 
                     {product.image ? (
                         <img
-                            src={`http://localhost:3000${product.image}`}
+                            src={`${API_URL}${product.image}`}
                             alt={product.name}
                             className="w-16 h-16 rounded-xl object-cover border border-gray-200 shadow-sm"
                         />
@@ -181,7 +183,7 @@ function ProductCard({
 
                 {product.image ? (
                     <img
-                        src={`http://localhost:3000${product.image}`}
+                        src={`${API_URL}${product.image}`}
                         alt={product.name}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
                     />
