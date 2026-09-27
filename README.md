@@ -91,15 +91,16 @@ full-stack-ecommerce-app/
 │   ├── uploads/
 │   ├── package.json
 │   ├── package-lock.json
+│   ├── .gitignore
 │   └── index.js
 │
 ├── Frontend/
 │   ├── public/
 │   ├── src/
+│   ├── .gitignore
 │   ├── package.json
 │   └── package-lock.json
 │
-├── .gitignore
 └── README.md
 ```
 
