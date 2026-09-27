@@ -262,21 +262,6 @@ One of the main goals of the project was to understand how different parts of a 
 
 ---
 
-## 🔮 Future Improvements
-
-Possible future improvements include:
-
-* Persistent shopping cart
-* Email notifications
-* Order history page
-* Admin order management
-* Product reviews and ratings
-* Wishlist
-* Real payment gateway integration
-* Production deployment
-
----
-
 ## 👩‍💻 Author
 
 **Chahd Touaibia**
