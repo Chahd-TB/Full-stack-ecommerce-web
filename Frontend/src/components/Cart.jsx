@@ -1,3 +1,5 @@
+const API_URL = import.meta.env.VITE_API_URL;
+
 function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
     const total = cartItems.reduce(
         (sum, item) =>
@@ -48,7 +50,7 @@ function Cart({ cartItems, onRemove, onQuantityChange, onCheckout }) {
                                 {/* Image */}
                                 {item.image ? (
                                     <img
-                                        src={`http://localhost:3000${item.image}`}
+                                        src={`${API_URL}${item.image}`}
                                         alt={item.name}
                                         className="w-24 h-24 rounded-xl object-cover"
                                     />
