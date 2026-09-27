@@ -273,14 +273,14 @@ function App() {
     };
 
     return (
-        <div className="flex">
+    <div className="flex flex-col lg:flex-row">
 
-            <Navbar
-                currentPage={currentPage}
-                onPageChange={setCurrentPage}
-            />
+        <Navbar 
+            currentPage={currentPage} 
+            onPageChange={setCurrentPage} 
+        />
 
-            <div className="bg-[#f5f7f6] flex-1 min-h-screen py-5 px-6">
+        <div className="bg-[#f5f7f6] flex-1 min-h-screen py-4 px-3 sm:px-4 lg:py-5 lg:px-6">
 
                 <Topbar />
 
